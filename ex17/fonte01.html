@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!--Nesse exercício apredemos mudar a família das fontes-->
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+        Medidas Absolutas: cm, mm, in(Polegada), px, pt(Ponto), pc(paica).
+        OBS: pt e pc são medidas da tipografia de papel, não recomendável para materiais exibidos em telas digitais.
+
+        Medidas relativas: em(tamanho atual da fonte, relativa a "M" maiúsculo de uma fonte), ex(altura x da fonte), rem(fonte configurada no body), vw(view-width, largura da view port, representa a % da tela), vh(altura da view-port).
+
+        OBS: É recomendação da W3C usar como medidas de fontes as medidas em "px e em".
+        1em=16px
+        A unidade de medida "em" representa a % do tamanho da fonte padrão.*/
+
+           /* font-size: 1em;/*
+            /*font-weight: 300;*/
+            /*lighter, normal, bold, bolder*/
+          /*  font-style: normal;*/
+            /*Shorthand font, sequência na ordem para configurar
+            - font-style - font-variant - font-weight - font-size/line-height - font-family*/
+            font: italic caption
+            1em arial, sans-serif;
+        }
+        h1, h2 {
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque delectus recusandae consequuntur ad tempore sit accusantium animi modi corrupti officiis illo cupiditate et optio, distinctio quisquam vero nobis totam.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et dolorum corrupti quibusdam optio enim perferendis consequatur tempore, eligendi, pariatur, dignissimos aliquid non animi nisi mollitia cupiditate qui possimus cumque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium odit, cumque provident consectetur fugit quam asperiores hic? Nesciunt corrupti neque sit dolore eius, reprehenderit voluptas magni voluptates quo eum.</p>
+</body>
+</html>

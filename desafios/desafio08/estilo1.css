@@ -1,0 +1,18 @@
+body {
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    background-image: linear-gradient(to right, darkblue,  rgb(255, 0, 85));
+}
+
+a {
+    background-image: linear-gradient(to right, rgba(0, 0, 139, 0.623),  rgba(255, 0, 85, 0.548));
+    color: white;
+}
+a:hover {
+    background-image: linear-gradient(to right, orange, purple, green);
+    color: aqua;
+    padding: 8px;
+    transition: 0.6s;
+}

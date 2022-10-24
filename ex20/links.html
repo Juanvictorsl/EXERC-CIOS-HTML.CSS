@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+           SELETORES PERSONALIZADOS
+           # = id
+           . = class
+           : = pseudoclass
+           :: = pseudoelement
+           > = clildren
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        h1#teste {
+            /*OBS: existe também a propriedade chamda box-sizing, que pode definir as medidas de height e width, partir da border-box.*/
+            width: 300px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            /* Sequence border and outline shorthand settings.
+               -width, -style and -color.
+               Sequence padding and margin shorthand settings.
+               -top, -right, -bottom and -left.
+            */
+            border: 10px solid #00ccff;
+            padding: 10px 15px 20px 25px;
+            outline: 15px solid blue;
+            margin: 0px 10px 20px 30px;
+        }
+        /*Pseudoclasses - São palavras que definem os estados dos elementos dentro da HTML.*/
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            /*Quando o link ja foi visitado*/
+            color: darkred;
+        }
+        a:hover {
+            /*Sublinhar quando passar o cursor do mouse em cima do link*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            /*Mostrar que o link foi clicado*/
+            color: orange;
+        }
+        .especial {
+            background-color: rgb(255, 189, 189);
+        }
+        /*Pseudolelementos - Podem agir nas classes, elementos e ids, e mexem diretamente no conteúdo.*/
+        .especial::after {
+            /*serve para indicar/avisar que é um link.*/
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        div > p {
+            display: none;
+            color: white;
+            
+        }
+        div:hover > p {
+            display: block;
+            background-color: rgb(41, 7, 41);
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passa a seta do mouse aqui aqui em cima
+        <p>Olá, mundo!</p>  
+    </div>
+    <h1>Personalizando Link</h1>
+    <ul>
+        <!--OBS: Quando o link ficar azul significa que não foi visitado  e quando ficar roxo significa que já foi visitado.-->
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do Cursoemvideo</a></li>
+    </ul>
+
+    <h1 id="teste">Exemplo de Caixa</h1>
+</body>
+</html>

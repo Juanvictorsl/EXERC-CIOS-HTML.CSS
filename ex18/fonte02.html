@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+     @font-face {
+        font-family: 'sans';
+        src: url(fontes/JosefinSans-VariableFont_wght.ttf);
+     }
+    @font-face {
+        font-family: 'love';
+        src: url('fontes/love-larry.ttf.ttf');
+        font-weight: normal;
+     }
+
+            /* Tipos de Format()
+               - opentype (otf)
+               - truetype (ttf)
+               - embeded-opentype
+               - truetype-adt(Apple Advanced Typography)
+               - svg*/
+            
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #00E3FC, #00DCF5, #00C5DB);
+        }
+        h1 {
+            font-family: 'sans' ,'love' ,'Times New Roman', Times, serif;
+            font-size: 5em;
+            font-weight: bolder;
+        }
+
+        p {
+            font-family: 'sans' ;
+            font-size: 1em;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius quod esse sunt at, laudantium id qui ipsam, quaerat minus adipisci explicabo impedit perspiciatis voluptates repudiandae cupiditate sed ad accusamus!</p>
+</body>
+</html>
