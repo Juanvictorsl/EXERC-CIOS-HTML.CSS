@@ -4,4 +4,3 @@
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
 
  <a href="https://github.com/Juanvictorsl/EXERC-CIOS-HTML.CSS/blob/main/index.html">Executar o primeiro exercício.</a>
- <a href="https://juanvictorsl.github.io/projeto-android/">Executar meu primeiro site.</a>
